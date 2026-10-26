@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Aamya Studio: Meta ads, SEO and Shopify development for fashion and D2C brands.">
+<meta name="description" content="Aamya Studio: Meta ads, SEO, Shopify and app development for fashion and D2C brands.">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Aamya Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -95,7 +95,7 @@ td.r,th.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .pill.cut{background:transparent;border:1px solid var(--line);color:var(--muted)}
 
 /* services */
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:36px}
 .svc{display:flex;flex-direction:column;gap:14px;padding:26px;border:1px solid var(--line);border-radius:14px;background:var(--surface);min-width:0}
 .svc .price{font-family:var(--display);font-size:30px;font-weight:700;letter-spacing:-.02em}
 .svc .price small{font-family:var(--body);font-size:14px;font-weight:400;color:var(--muted);letter-spacing:0}
@@ -104,6 +104,11 @@ td.r,th.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .audit{margin-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:24px 26px;border-radius:14px;background:var(--accent-soft)}
 .audit p{max-width:62ch}
 
+.builds{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.build{display:flex;flex-direction:column;gap:10px;padding:24px;border:1px solid var(--line);border-radius:14px;background:var(--surface);min-width:0}
+.build p:not(.label){color:var(--muted);font-size:15.5px}
+.blinks{margin-top:auto;padding-top:6px;display:flex;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:13.5px}
+.blinks span{color:var(--muted)}
 /* process */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:36px;counter-reset:s}
 .step{border-top:2px solid var(--ink);padding-top:16px;min-width:0}
@@ -139,6 +144,7 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);color:var(--mute
 @media (max-width:860px){
   .hero,.case-head,.case-grid,.contact{grid-template-columns:1fr}
   .services{grid-template-columns:1fr}
+  .builds{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
   .strip{grid-template-columns:1fr 1fr}
   .strip div:nth-child(2){border-right:0}
@@ -162,7 +168,7 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);color:var(--mute
   <nav>
     <a class="logo" href="#top">aamya<span>.</span>studio</a>
     <div class="navlinks">
-      <a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#contact">Contact</a>
+      <a href="#work">Work</a><a href="#built">Built</a><a href="#services">Services</a><a href="#process">Process</a><a href="#contact">Contact</a>
     </div>
   </nav>
 
@@ -293,6 +299,18 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);color:var(--mute
     </div>
   </section>
 
+  <section id="built">
+    <p class="label">Things I've built</p>
+    <h2 style="margin-top:12px">Beyond marketing: real products in use.</h2>
+    <div class="builds">
+      <div class="build"><p class="label">Shopify · Liquid</p><h3>Clazzey India &amp; US stores</h3><p>Two storefronts with hand-coded themes, payments, email and WhatsApp automation.</p><div class="blinks"><a href="https://clazzey.com" target="_blank" rel="noopener">clazzey.com</a><a href="https://clazzey.store" target="_blank" rel="noopener">clazzey.store</a></div></div>
+      <div class="build"><p class="label">React Native</p><h3>Clazzey shopping app</h3><p>A mobile shopping app connected to the India store's catalog.</p><div class="blinks"><span>Demo on request</span></div></div>
+      <div class="build"><p class="label">React · AI</p><h3>trvlr.ai</h3><p>An AI travel planning platform, designed and built from scratch.</p><div class="blinks"><a href="https://trvlr.ai" target="_blank" rel="noopener">trvlr.ai</a></div></div>
+      <div class="build"><p class="label">React · Supabase</p><h3>Factory production software</h3><p>Multi-role tool for a garment factory: production entries, invoicing and role-based access, with a Hinglish interface for floor workers.</p><div class="blinks"><span>Private tool · demo on request</span></div></div>
+      <div class="build"><p class="label">WordPress</p><h3>GraniteStack</h3><p>A SaaS company website, migrated from Wix to WordPress.</p><div class="blinks"><a href="https://granitestack.com" target="_blank" rel="noopener">granitestack.com</a></div></div>
+    </div>
+  </section>
+
   <section id="services">
     <p class="label">Services</p>
     <h2 style="margin-top:12px">Start with one thing. Add more when it works.</h2>
@@ -329,6 +347,17 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);color:var(--mute
           <li>Landing pages built to convert</li>
           <li>Speed fixes and app cleanup</li>
           <li>Custom sections in Liquid</li>
+        </ul>
+      </article>
+      <article class="svc">
+        <h3>Custom apps &amp; software</h3>
+        <p class="price">Custom quote</p>
+        <ul>
+          <li>Mobile apps in React Native</li>
+          <li>Web apps in React</li>
+          <li>Internal tools: orders, production, invoicing</li>
+          <li>Supabase and API integrations</li>
+          <li>WordPress and business websites</li>
         </ul>
       </article>
     </div>
@@ -395,7 +424,7 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);color:var(--mute
 <div class="wrap">
   <footer>
     <span>© 2026 Aamya Studio</span>
-    <span>Results shown are from real ad accounts and Shopify stores.</span>
+    <span>Results shown are from real ad accounts and Shopify stores. Past results don't guarantee future performance.</span>
   </footer>
 </div>
 
